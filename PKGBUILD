@@ -13,5 +13,4 @@ sha256sums=('SKIP')
 package() {
     cd "$srcdir/$pkgname"
     install -Dm755 yt-gum.sh "$pkgdir/usr/bin/yt-gum"
-    install -Dm644 yt-gum.desktop "$pkgdir/usr/share/applications/yt-gum.desktop"
 }
