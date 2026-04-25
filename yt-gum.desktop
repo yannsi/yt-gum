@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=yt-gum
+Comment=YouTube TUI powered by gum and yt-dlp
+Exec=bash -c 'konsole -e yt-gum'
+Icon=multimedia-video-player
+Terminal=false
+Type=Application
+Categories=AudioVideo;Network;
+Keywords=youtube;download;stream;
