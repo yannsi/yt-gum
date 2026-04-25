@@ -7,10 +7,10 @@ arch=('any')
 url="https://github.com/yannsi/yt-gum"
 license=('MIT')
 depends=('gum' 'yt-dlp' 'mpv' 'ffmpeg')
-source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
+source=("$pkgname::git+$url.git")
 sha256sums=('SKIP')
 
 package() {
-    cd "$srcdir/$pkgname-$pkgver"
+    cd "$srcdir/$pkgname"
     install -Dm755 yt-gum.sh "$pkgdir/usr/bin/yt-gum"
 }
